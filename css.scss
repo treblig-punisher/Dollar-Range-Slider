@@ -1,0 +1,94 @@
+
+$main-background-color: #29282D;
+$knob-size: 30px;
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color:  $main-background-color;
+}
+
+.component-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+    align-items: center;
+    // justify-content: space-arou;
+    width: 500px;
+    height: 300px;
+    margin:  auto auto;
+    box-shadow: 0 0 40px rgb(29, 29, 29);
+    box-shadow: 0 0 100px rgb(29, 29, 29);
+    box-shadow: 0 0 40px rgb(29, 29, 29);
+    border-radius: 10px;
+}
+
+.money-amount{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: #FFCA00;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:  #55525A;
+
+    width: 400px;
+    height: 12px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    
+    .knob{
+        display: block;
+        position: relative;
+        // left: 0%;
+        // opacity: 50%;
+        border-radius: 50%;
+        transform: scale(1);
+       
+        //  translateX(0px);
+       
+        // margin-left: -$knob-size/2-10;
+        width: $knob-size;
+        height: $knob-size;
+        background-color: #FF0079;
+        transition: transform 0.2s ease;
+        
+    }
+    .knob:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    // ::after{
+    //     display: block;
+    //     position: relative;
+    //     content: "";
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: #FF0079;
+    // }
+}
+
+
+.buy-button{
+    color: aliceblue;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    background-color: #39343F;
+    padding: 15px 40px;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+    transition: transform 0.4s ease;
+    
+}
+.buy-button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

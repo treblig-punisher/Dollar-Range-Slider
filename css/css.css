@@ -1,0 +1,103 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #29282D;
+}
+
+.component-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 300px;
+  margin: auto auto;
+  -webkit-box-shadow: 0 0 40px #1d1d1d;
+          box-shadow: 0 0 40px #1d1d1d;
+  -webkit-box-shadow: 0 0 100px #1d1d1d;
+          box-shadow: 0 0 100px #1d1d1d;
+  box-shadow: 0 0 40px #1d1d1d;
+  border-radius: 10px;
+}
+
+.money-amount {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  color: #FFCA00;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #55525A;
+  width: 400px;
+  height: 12px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.progress-bar .knob {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 30px;
+  height: 30px;
+  background-color: #FF0079;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.progress-bar .knob:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
+
+.buy-button {
+  color: aliceblue;
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  background-color: #39343F;
+  padding: 15px 40px;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+
+.buy-button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  cursor: pointer;
+}
