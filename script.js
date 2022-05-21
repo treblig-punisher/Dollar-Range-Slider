@@ -1,8 +1,17 @@
 const progressBar = document.querySelector(".progress-bar");
 const knob = document.querySelector(".knob");
 const moneyAmount = document.querySelector(".money-amount");
+const button = document.querySelector(".buy-button");
+button.addEventListener("click", ()=>{
+    console.log("clicked");
+});
 let pseudoElementWidth = 16;
 let knobDropped = true;
+const knobObject = {
+    initialValue: "30px",
+    maxValue: "430px",
+    currentValue: "30px"
+}
 let mouseEnteredKnob = false;
 let storedMouseCoordinates={
     x: 0,
@@ -28,15 +37,17 @@ function updateMousePosition(e)
 
 function mouseIsDown()
 {
-    if(!knobDropped)
-    {
+    // if(!knobDropped)
+    // {
 
-    }
+    // }
+    console.log("mouseDown");
 }
 
 function mouseEntered()
 {
     mouseEnteredKnob = true;
+    console.log("enterd knob");
 }
 
 function mouseLeftKnob()

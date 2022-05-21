@@ -46,6 +46,7 @@ body{
     margin-bottom: 40px;
     
     .knob{
+        
         display: block;
         position: absolute;
         z-index: 10;
@@ -62,8 +63,9 @@ body{
       
         background-color: #FF0079;
         border-color: #FF0079;
-        left: 200px;
+        left:  430px;
         border-width: 0;
+        opacity: 0.5;
         box-shadow: 0px 0px 0px 0px #ff007742;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         
