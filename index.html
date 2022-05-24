@@ -10,13 +10,25 @@
 <body>
     
     <div class="component-container">
-        <div class="money-amount">$16.00</div>
-        <div class="progress-bar">
-            <div class="knob"></div>
-        </div>
+        <div class="money-amount">$0.00</div>
+        
+        <input class="progress-bar" step="0.01" type="range" min="0.00" max="16.00" value="0.00" id="range-progress-bar">
+        <div class="knob"></div>
+        <!-- <div class="progress-bar">
+        
+            <div class="progress-foreground"></div>
+        </div> -->
         <div class="buy-button">BUY NOW</div>
+        
+        
     </div>
-
+    <!-- <div class="mouse-coordinates">
+        <div class="mouse-x">MouseX: 0 </div>
+        <div class="mouse-y">MouseY: 0 </div>
+        <div class="knob-dropped">knob dropped: </div>
+        <div class="knob-entered">knob entered: </div>
+        <div class="percentage-display">Position: </div>
+    </div> -->
     <script src="script.js"></script>
 </body>
 </html>

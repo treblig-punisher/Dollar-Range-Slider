@@ -2,8 +2,12 @@
 $main-background-color: #29282D;
 $knob-size: 30px;
 $bar-radius: 15px;
+:root{
+    --percent-amount: 0;
+}
 
 body{
+    
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -16,7 +20,7 @@ body{
     position: relative;
     top: 10vh;
     align-items: center;
-    // justify-content: space-arou;
+    
     width: 500px;
     height: 300px;
     margin:  auto auto;
@@ -35,59 +39,48 @@ body{
 }
 
 .progress-bar{
+    --thumb-size: 30px;
+    appearance: none;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:  #55525A;
-
+    background:  #6226c9;
     width: 400px;
     height: 12px;
     border-radius: $bar-radius;
     margin-bottom: 40px;
     
-    .knob{
-        
-        display: block;
-        position: absolute;
-        z-index: 10;
-        // left: 0%;
-        // opacity: 50%;
+    &::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        appearance: none;
+        background: #ff02c4;
         border-radius: 50%;
-        transform: scale(1);
-       
-        //  translateX(0px);
-       
-        // margin-left: -$knob-size/2-10;
-        width: $knob-size;
-        height: $knob-size;
-      
-        background-color: #FF0079;
-        border-color: #FF0079;
-        left:  430px;
-        border-width: 0;
-        opacity: 0.5;
+        width: var(--thumb-size);
+        height: var(--thumb-size);
+        border: none;
+        cursor: pointer;    
         box-shadow: 0px 0px 0px 0px #ff007742;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        
-        
+        transition: transform 0.2s ease-in-out , box-shadow 0.1s ease-in-out;
     }
-    .knob:hover{
-        transform: scale(1.2);
+
+    &::-moz-range-thumb{
+        appearance: none;
+        background: #ff02c4;
+        border-radius: 50%;
+        width: var(--thumb-size);
+        height: var(--thumb-size);
+        border: none;
+        cursor: pointer;    
+        box-shadow: 0px 0px 0px 0px #ff007742;
+        transition: transform 0.2s ease-in-out , box-shadow 0.1s ease-in-out;
+    }
+    &::-moz-range-thumb:hover{
+        transform:scale(1.2);
         box-shadow: 0px 0px 0px 8px #ff007777;
-        cursor: pointer;
+    }
+    &::-webkit-slider-thumb:hover{
+        transform:scale(1.2);
+        box-shadow: 0px 0px 0px 8px #ff007777;
     }
     
-}
-
-.progress-bar::after{
-    display: block;
-    position: relative;
-    // overflow: hidden;
-    border-radius: $bar-radius;
-    content: "";
-    width: 40%;
-    height: 100%;
-    background-color: #FF0079;
 }
 
 .buy-button{
