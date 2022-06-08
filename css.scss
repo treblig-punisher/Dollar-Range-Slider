@@ -34,6 +34,7 @@ body{
 
 .money-amount{
     font-size: 1.8rem;
+    user-select: none;
     font-family: sans-serif;
     color: #FFCA00;
     margin-top: 40px;
@@ -88,6 +89,7 @@ body{
 .buy-button{
     // visibility: hidden;
     color: aliceblue;
+    user-select: none;
     font-size: 0.7rem;
     font-family: sans-serif;
     background-color: #39343F;
